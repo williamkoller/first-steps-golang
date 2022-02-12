@@ -10,6 +10,8 @@ COPY . .
 
 RUN go build -o main . 
 
+RUN go version
+
 FROM scratch
 
 WORKDIR /build
